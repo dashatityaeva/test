@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViceCode</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <main role="main">
+        <div class="container p-0 d-flex align-items-center justify-content-center">
+            <form class="form-container  d-flex wrapper  row">
+                <div class="col-lg-9 col-md-12 pt-sm-5 p-md-4 py-lg-6 pl-lg-4 pr-lg-7">
+                    <div class="progr-bar d-flex flex-column mb-5xs">
+                        <span class="pb-4">Готово: <span class="percents ml-2">30%</span> </span>
+                        <div class="progr d-flex justify-content-between">
+                            <div class="item done" data-valuenow="30"></div>
+                            <div class="item" data-valuenow="60"></div>
+                            <div class="item" data-valuenow="99"></div>
+                        </div>
+                    </div>
+                    <h2 class="mb-6 title-block">Выберите сборщик проектов, которым Вы используете:</h2>
+
+
+                    <!-- 1 блок -->
+                    <div class="block-one">
+                    <div class="d-flex flex-row  justify-content-between radio-group mb-7 ml-5xs" >
+                        <div class="form-check d-flex flex-column align-items-center justify-content-between">
+                            <picture><source srcset="img/bundlers/bundler-gulp.svg" type="image/webp"><img class="" src="img/bundlers/bundler-gulp.svg" alt="Логотип сборщика Gulp" title="Таск-менеджер для автоматического выполнения часто используемых задач"></picture>
+                            <label class="form-check-label" for="bundler-gulp">
+                                <input class="form-check-input custom-radio" type="radio" name="bundler" id="bundler-gulp"
+                                    value="gulp" checked>
+                                Gulp
+                            </label>
+                        </div>
+                        <div class=" form-check d-flex flex-column align-items-center justify-content-between">
+                            <picture><source srcset="img/bundlers/bundler-webpack.svg" type="image/webp"><img class="" src="img/bundlers/bundler-webpack.svg" alt="Логотип сборщика Webpack" title="Сборщик модулей JavaScript"></picture>
+                            <label class="form-check-label" for="bundler-webpack">
+                                <input class="form-check-input" type="radio" name="bundler" id="bundler-webpack"
+                                    value="webpack">
+
+                                Webpack
+                            </label>
+                        </div>
+                        <div class="form-check d-flex flex-column align-items-center justify-content-between">
+                            <picture><source srcset="img/bundlers/bundler-grunt.svg" type="image/webp"><img src="img/bundlers/bundler-grunt.svg" alt="Логотип сборщика Grunt" title="Менеджер задач для автоматического выполнения рутинных операций, написанный на языке программирования JavaScript"></picture>
+                            <label class="form-check-label" for="bundler-grunt">
+                                <input class="form-check-input" type="radio" name="bundler" id="bundler-grunt"
+                                    value="grunt">
+
+                                Grunt
+                                <i class="fa fa-circle-o"></i>
+                            </label>
+                        </div>
+                        <div class=" form-check d-flex flex-column align-items-center justify-content-between">
+                            <picture><source srcset="img/bundlers/bundler-parcel.svg" type="image/webp"><img src="img/bundlers/bundler-parcel.svg" alt="Логотип сборщика Parcel" title="Маленький и быстрый бандлер, позиционируется как решение для маленьких проектов"></picture>
+                            <label class="form-check-label" for="bundler-parcel">
+                                <input class="form-check-input" type="radio" name="bundler" id="bundler-parcel"
+                                    value="parcel">
+
+                                Parcel
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#block-two" id="step-one" role="button" class="btn btn-primary rounded-0 button">Следующий шаг</a> 
+                    </div>
+                </div>
+                    <!-- 2 блок -->
+                    <div class="block-two ">
+                        <div class="d-flex justify-content-between checkbox-group hidden mb-5 pt-3">
+                        <fieldset class="d-flex flex-column">
+                            <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Методология БЭМ</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">JQuery</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox3">HAML</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox4">PUG</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox5">Stylus</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox6">SCSS</label>
+                              </div>
+                        </fieldset>
+                        <fieldset class="d-flex flex-column">
+                            <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox7">LESS</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox8">SVG</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox9">Canvas</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox10">Анимации</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox11">Верстка под iOS</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox12">Адаптивная верстка</label>
+                              </div>
+                        </fieldset>
+                        <fieldset class="d-flex flex-column">
+                            <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox13">Верстка рассылок</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox14" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox14">Верстка без макета</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox15" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox15">GIT</label>
+                              </div>
+                              
+                        </fieldset>  
+                        </div>
+    
+                        <div class="d-flex justify-content-center">
+                            <a href="#block-tree" id="step-two" role="button" class="btn btn-primary rounded-0 button hidden">Следующий шаг</a> 
+                        </div>
+                    </div>
+
+                    <!-- 3 блок -->
+                    <div class="block-tree ">
+                        <div class="d-flex justify-content-center form hidden mb-5 pt-3">
+                                <div class="">
+                                    <div class="form-group mb-2">
+                                        <label class="sr-only" for="full-name">Полное ФИО</label>
+                                        <input type="email" class="form-control" id="full-name" placeholder="Полное ФИО">
+                                       </div>
+                                      <div class="form-group mb-2">
+                                        <label class="sr-only" for="Year-birth">Год рождения</label>
+                                        <input type="password" class="form-control" id="Year-birth" placeholder="Год рождения">
+                                      </div><div class="form-group mb-2">
+                                          <label class="sr-only" for="residence ">Место жительства</label>
+                                          <input type="email" class="form-control" id="residence " placeholder="Место жительства">
+                                         </div>
+                                        <div class="form-group mb-2">
+                                          <label class="sr-only" for="telegram">Телеграмм</label>
+                                          <input type="password" class="form-control" id="telegram" placeholder="Телеграмм">
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a href="#block-thanks" id="step-tree" role="button" class="btn btn-primary rounded-0 button hidden">Следующий шаг</a> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-3 d-none d-lg-flex d-xl-flex py-lg-6 px-4  flex-column justify-content-between sidebar">
+                    <div class="logo-group">
+                        <div class="logo-wrap">
+                            <picture><source srcset="img/logo.svg" type="image/webp"><img class="logo-icon" src="img/logo.svg" alt=""></picture>
+                            <span class="logo-name">Вайскод</span>
+                        </div>
+                        <div class="info-block">
+                            <p class="info-text">Привет, Коллега. Для попадания в команду необходимо выполнить тестовое задание, а именно сверстать и запрограммировать этот маленький квиз.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column steps">
+                        <span class="step-current mb-1">Шаг <span class="number-current-step">1</span></span>
+                        <span class="step-left">Осталось шагов <span class="count-left-step">2</span></span>
+                    </div>
+                </div>
+
+                
+            </form>
+            <div class="block-thanks wrapper hidden d-flex justify-content-center align-items-center flex-column">
+                        <span class="thanks-text mb-7">Спасибо</span>  
+                        <p class="thanks-info">Упакуйте работу в *zip и отправьте на почту 
+                          <a href="mailto:tityaevadash@gmail.com" class="thanks-email">tityaevadash@gmail.com</a>
+                        </p>  
+            </div>
+    </main>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
